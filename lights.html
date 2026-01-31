@@ -19,33 +19,25 @@
   </header>
   <main>
     {% block content %}
-    <h2 class="main__title">Выбери тип дома:</h2>
-    <ul class="list">
+    <h2 class="main__title">Выбери освещение:</h2>
+    <ul class="list" id="list">
       <li class="list__item">
-        <a href="/1">
-        <img class="item__img" src="../static/img/home.svg" alt="home">
-        <span>Маленький дом</span></a>
-      </li>
-      <!-- Задание №1 -->
-      <li class="list__item">
-        <a href="/2">
-        <img class="item__img" src="../static/img/home.svg" alt="home">
-        <span><!--Укажи средней дом--></span></a>
-      </li>
-      <li class="list__item">
-        <a href="/3">
-        <img class="item__img" src="../static/img/home.svg" alt="home">
-        <span><!--Укажи большой дом--></span></a>
-      <!--  -->
-      </li>
-    </ul>
-    {% endblock %}
-    {% block content %}
-    <li class="list__item">
         <a href={{size + "/3" }}>
           <img class="item__img" src="../static/img/light.svg" alt="light">
           <span>2-4 лампочки</span></a>
-    </li>
+      </li>
+      <!--Задание №2 -->
+      <li class="list__item">
+        <a href="{{Укажи маршрут с коэффицентом 7}}"> 
+          <img class="item__img" src="../static/img/light.svg" alt="light">
+          <span>4-6 лампочек</span></a>
+      </li>
+      <li class="list__item">
+        <a href="{{Укажи маршрут с коэффицентом 10}}">
+          <img class="item__img" src="../static/img/light.svg" alt="light">
+          <span>8 и более</span></a>
+      </li>
+    </ul>
     {% endblock %}
   </main>
   <footer>
